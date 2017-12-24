@@ -17,4 +17,25 @@
     <input #newHobby type="text" name="newHobby" value="">
   </form>
 </div>
+<div>
+  <h3>Modify content</h3>
+  <label for="name">Name: </label>
+  <input
+    type="text"
+    name="name"
+    placeholder="change your name"
+    [(ngModel)] = "name" >
+  <label for="email">Email: </label>
+  <input
+    type="text"
+    name="email"
+    placeholder="change your email"
+    [(ngModel)] = "email" >
+</div>
+
+<h3>Posts</h3>
+<div *ngFor='let post of posts'>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.body }}</p>
+</div>
 
