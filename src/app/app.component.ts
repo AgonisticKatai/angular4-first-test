@@ -22,7 +22,7 @@ export class AppComponent {
     this.showHobbies = !this.showHobbies;
   }
 
-  addHobby = (newHobby) => {
+  addHobby = newHobby => {
     this.hobbies = [...this.hobbies, newHobby.value];
     newHobby.value = '';
     return false;
